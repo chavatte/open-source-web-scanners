@@ -1,15 +1,19 @@
-# open-source-web-scanners
-A list of open source web security scanners on GitHub and GitLab, ordered by Stars. It does not provide in-depth analysis - for more analysis or a wider range of tools, see the links below.
+# Scanners Web Open Source
 
-Note that some large projects have multiple repos - in which case the second most relevant repo is included immediately after and is indented.
+*Este documento é uma tradução e adaptação para o português brasileiro, realizada a partir de um fork do trabalho original de Simon Bennetts (@psiinon, Líder de Projeto do OWASP ZAP).*
+*Repositório original (em inglês): [https://github.com/psiinon/open-source-web-scanners]*
 
-Related: [open-source-llm-scanners](https://github.com/psiinon/open-source-llm-scanners/)
+Uma compilação de scanners de segurança para aplicações web (web security scanners) de código aberto, disponíveis no GitHub e GitLab, classificados por popularidade (Stars). Esta lista não provê análises detalhadas; para avaliações mais aprofundadas ou um espectro mais amplo de ferramentas, consulte os links referenciados.
 
-## General Purpose Web Scanners
+Observação: Projetos de maior porte podem possuir múltiplos repositórios. Nesses casos, o segundo repositório de maior relevância é listado subsequentemente e com indentação.
 
-Tools which can find a range of 'unknown' vulnerabilities on any websites.
+Relacionado: [open-source-llm-scanners](https://github.com/psiinon/open-source-llm-scanners/) (scanners open source para LLMs, conteúdo em inglês)
 
-| Main Site | Last Commit | Committers | Stars |
+## Scanners Web de Propósito Geral (DAST/IAST)
+
+Ferramentas projetadas para identificar um amplo espectro de vulnerabilidades, incluindo as não previamente catalogadas (desconhecidas), em diversas aplicações web. Geralmente operam como DAST (Dynamic Application Security Testing) ou IAST (Interactive Application Security Testing).
+
+| Site Principal | Último Commit | Contribuidores | Estrelas |
 | --- | --- | --- | --- |
 | [ZAP](https://www.zaproxy.org) | [![Last Commit](https://img.shields.io/github/last-commit/zaproxy/zaproxy)](https://github.com/zaproxy/zaproxy/commits) | [![Contributors](https://img.shields.io/github/contributors/zaproxy/zaproxy)](https://github.com/zaproxy/zaproxy/graphs/contributors) | [![Stars](https://img.shields.io/github/stars/zaproxy/zaproxy)](https://github.com/zaproxy/zaproxy/stargazers) |
 | - [ZAP Extensions](https://github.com/zaproxy/zap-extensions) | [![Last Commit](https://img.shields.io/github/last-commit/zaproxy/zap-extensions)](https://github.com/zaproxy/zap-extensions/commits) | [![Contributors](https://img.shields.io/github/contributors/zaproxy/zap-extensions)](https://github.com/zaproxy/zap-extensions/graphs/contributors)| [![Stars](https://img.shields.io/github/stars/zaproxy/zap-extensions)](https://github.com/zaproxy/zap-extensions/stargazers) |
@@ -31,11 +35,11 @@ Tools which can find a range of 'unknown' vulnerabilities on any websites.
 | [ProKZee](https://github.com/al-sultani/prokzee) | [![Last Commit](https://img.shields.io/github/last-commit/al-sultani/prokzee)](https://github.com/al-sultani/prokzee/commits) | [![Contributors](https://img.shields.io/github/contributors/al-sultani/prokzee)](https://github.com/al-sultani/prokzee/graphs/contributors) | [![Stars](https://img.shields.io/github/stars/al-sultani/prokzee)](https://github.com/al-sultani/prokzee/stargazers) |
 | [Browserker](https://gitlab.com/wirepair/browserker/) | [![Last Commit](https://img.shields.io/gitlab/last-commit/18213633)](https://gitlab.com/wirepair/browserker/-/commits/master) | [![Contributors](https://img.shields.io/gitlab/contributors/18213633)](https://gitlab.com/wirepair/browserker/-/graphs/master) | [![Stars](https://img.shields.io/gitlab/stars/18213633)](https://gitlab.com/wirepair/browserker/-/starrers) |
 
-## Infrastructure Web Scanners
+## Scanners de Infraestrutura Web
 
-Tools which can find a range of 'known' vulnerabilities on any websites.
+Ferramentas focadas na identificação de vulnerabilidades conhecidas (baseadas em assinaturas, CVEs ou configurações inseguras) na infraestrutura web exposta (servidores web, proxies, etc.).
 
-| Main Site | Last Commit | Committers | Stars |
+| Site Principal | Último Commit | Contribuidores | Estrelas |
 | --- | --- | --- | --- |
 | [Nuclei](https://nuclei.projectdiscovery.io/) | [![Last Commit](https://img.shields.io/github/last-commit/projectdiscovery/nuclei)](https://github.com/projectdiscovery/nuclei/commits) | [![Contributors](https://img.shields.io/github/contributors/projectdiscovery/nuclei)](https://github.com/projectdiscovery/nuclei/graphs/contributors) | [![Stars](https://img.shields.io/github/stars/projectdiscovery/nuclei)](https://github.com/projectdiscovery/nuclei/stargazers) |
 | - [Nuclei Templates](https://github.com/projectdiscovery/nuclei-templates/) | [![Last Commit](https://img.shields.io/github/last-commit/projectdiscovery/nuclei-templates)](https://github.com/projectdiscovery/nuclei-templates/commits) | [![Contributors](https://img.shields.io/github/contributors/projectdiscovery/nuclei-templates)](https://github.com/projectdiscovery/nuclei-templates/graphs/contributors) | [![Stars](https://img.shields.io/github/stars/projectdiscovery/nuclei-templates)](https://github.com/projectdiscovery/nuclei-templates/stargazers) |
@@ -49,11 +53,11 @@ Tools which can find a range of 'known' vulnerabilities on any websites.
 | [Observatory](https://observatory.mozilla.org/) | [![Last Commit](https://img.shields.io/github/last-commit/mozilla/http-observatory-website)](https://github.com/mozilla/http-observatory-website/commits) | [![Contributors](https://img.shields.io/github/contributors/mozilla/http-observatory-website)](https://github.com/mozilla/http-observatory-website/graphs/contributors) | [![Stars](https://img.shields.io/github/stars/mozilla/http-observatory-website)](https://github.com/mozilla/http-observatory-website/stargazers) |
 | [Spaghetti](https://github.com/infosecsecurity/Spaghetti) | [![Last Commit](https://img.shields.io/github/last-commit/infosecsecurity/Spaghetti)](https://github.com/infosecsecurity/Spaghetti/commits) | [![Contributors](https://img.shields.io/github/contributors/infosecsecurity/Spaghetti)](https://github.com/infosecsecurity/Spaghetti/graphs/contributors) | [![Stars](https://img.shields.io/github/stars/infosecsecurity/Spaghetti)](https://github.com/infosecsecurity/Spaghetti/stargazers) |
 
-## Fuzzers / Brute Forcers
+## Fuzzers / Ferramentas de Força Bruta
 
-Tools which focus on throwing 'bad stuff' at things - the user typically has to work out if it sticks.
+Ferramentas focadas em enviar dados malformados, inesperados ou aleatórios (fuzzing) ou tentar sistematicamente combinações de credenciais, diretórios, arquivos ou parâmetros (força bruta) para identificar falhas, endpoints ocultos ou condições de erro exploráveis. A análise dos resultados geralmente requer interpretação do usuário.
 
-| Main Site | Last Commit | Committers | Stars |
+| Site Principal | Último Commit | Contribuidores | Estrelas |
 | --- | --- | --- | --- |
 | [dirsearch](https://github.com/maurosoria/dirsearch) | [![Last Commit](https://img.shields.io/github/last-commit/maurosoria/dirsearch)](https://github.com/maurosoria/dirsearch/commits) | [![Contributors](https://img.shields.io/github/contributors/maurosoria/dirsearch)](https://github.com/maurosoria/dirsearch/graphs/contributors) | [![Stars](https://img.shields.io/github/stars/maurosoria/dirsearch)](https://github.com/maurosoria/dirsearch/stargazers) |
 | [Ffuf](https://github.com/ffuf/ffuf) | [![Last Commit](https://img.shields.io/github/last-commit/ffuf/ffuf)](https://github.com/ffuf/ffuf/commits) | [![Contributors](https://img.shields.io/github/contributors/ffuf/ffuf)](https://github.com/ffuf/ffuf/graphs/contributors) | [![Stars](https://img.shields.io/github/stars/ffuf/ffuf)](https://github.com/ffuf/ffuf/stargazers) |
@@ -65,11 +69,11 @@ Tools which focus on throwing 'bad stuff' at things - the user typically has to 
 | [radamsa](https://gitlab.com/akihe/radamsa) | [![Last Commit](https://img.shields.io/gitlab/last-commit/akihe/radamsa)](https://img.shields.io/gitlab/last-commit/akihe/radamsa) | [![Contributors](https://img.shields.io/gitlab/contributors/akihe%2Fradamsa)](https://gitlab.com/akihe/radamsa/-/graphs/master) | [![Stars](https://img.shields.io/gitlab/stars/akihe%2Fradamsa)](https://gitlab.com/akihe/radamsa/-/starrers) |
 | [BrowserBruter](https://github.com/netsquare/BrowserBruter) | [![Last Commit](https://img.shields.io/github/last-commit/netsquare/BrowserBruter)](https://github.com/netsquare/BrowserBruter/commits) | [![Contributors](https://img.shields.io/github/contributors/netsquare/BrowserBruter)](https://github.com/netsquare/BrowserBruter/graphs/contributors) | [![Stars](https://img.shields.io/github/stars/netsquare/BrowserBruter)](https://github.com/netsquare/BrowserBruter/stargazers) |
 
-## CMS Web Scanners
+## Scanners Web para CMS
 
-Tools which can find a range of 'known' vulnerabilities on one or more CMS websites.
+Ferramentas especializadas na identificação de vulnerabilidades conhecidas, temas, plugins e configurações inseguras em plataformas CMS (Content Management System) populares como WordPress, Joomla, Drupal, etc.
 
-| Main Site | Last Commit | Committers | Stars |
+| Site Principal | Último Commit | Contribuidores | Estrelas |
 | --- | --- | --- | --- |
 | [WPscan](https://wpscan.org/) | [![Last Commit](https://img.shields.io/github/last-commit/wpscanteam/wpscan)](https://github.com/wpscanteam/wpscan/commits) | [![Contributors](https://img.shields.io/github/contributors/wpscanteam/wpscan)](https://github.com/wpscanteam/wpscan/graphs/contributors) | [![Stars](https://img.shields.io/github/stars/wpscanteam/wpscan)](https://github.com/wpscanteam/wpscan/stargazers) |
 | [Volnx](https://github.com/anouarbensaad/vulnx) | [![Last Commit](https://img.shields.io/github/last-commit/anouarbensaad/vulnx)](https://github.com/anouarbensaad/vulnx/commits) | [![Contributors](https://img.shields.io/github/contributors/anouarbensaad/vulnx)](https://github.com/anouarbensaad/vulnx/graphs/contributors) | [![Stars](https://img.shields.io/github/stars/anouarbensaad/vulnx)](https://github.com/anouarbensaad/vulnx/stargazers) |
@@ -78,11 +82,11 @@ Tools which can find a range of 'known' vulnerabilities on one or more CMS websi
 | [JoomScan](https://wiki.owasp.org/index.php/Category:OWASP_Joomla_Vulnerability_Scanner_Project) | [![Last Commit](https://img.shields.io/github/last-commit/OWASP/joomscan)](https://github.com/OWASP/joomscan/commits) | [![Contributors](https://img.shields.io/github/contributors/OWASP/joomscan)](https://github.com/OWASP/joomscan/graphs/contributors) | [![Stars](https://img.shields.io/github/stars/OWASP/joomscan)](https://github.com/OWASP/joomscan/stargazers) |
 | [Clusterd](https://github.com/hatRiot/clusterd) | [![Last Commit](https://img.shields.io/github/last-commit/hatRiot/clusterd)](https://github.com/hatRiot/clusterd/commits) | [![Contributors](https://img.shields.io/github/contributors/hatRiot/clusterd)](https://github.com/hatRiot/clusterd/graphs/contributors) | [![Stars](https://img.shields.io/github/stars/hatRiot/clusterd)](https://github.com/hatRiot/clusterd/stargazers) |
 
-## API Web Scanners
+## Scanners Web para APIs
 
-Tools which focus on web APIs.
+Ferramentas especializadas na análise de segurança e identificação de vulnerabilidades em APIs web (REST, SOAP, GraphQL, etc.), incluindo problemas como autenticação falha, exposição excessiva de dados e injeção.
 
-| Main Site | Last Commit | Committers | Stars |
+| Site Principal | Último Commit | Contribuidores | Estrelas |
 | --- | --- | --- | --- |
 | [Cherrybomb](https://github.com/blst-security/cherrybomb) | [![Last Commit](https://img.shields.io/github/last-commit/blst-security/cherrybomb)](https://github.com/blst-security/cherrybomb/commits) | [![Contributors](https://img.shields.io/github/contributors/blst-security/cherrybomb)](https://github.com/blst-security/cherrybomb/graphs/contributors) | [![Stars](https://img.shields.io/github/stars/blst-security/cherrybomb)](https://github.com/blst-security/cherrybomb/stargazers) |
 | [Akto](https://github.com/akto-api-security/community-edition) | [![Last Commit](https://img.shields.io/github/last-commit/akto-api-security/community-edition)](https://github.com/akto-api-security/community-edition/commits) | [![Contributors](https://img.shields.io/github/contributors/akto-api-security/community-edition)](https://github.com/akto-api-security/community-edition/graphs/contributors) | [![Stars](https://img.shields.io/github/stars/akto-api-security/community-edition)](https://github.com/akto-api-security/community-edition/stargazers) |
@@ -90,11 +94,11 @@ Tools which focus on web APIs.
 | [VulnAPI](https://github.com/cerberauth/vulnapi) | [![Last Commit](https://img.shields.io/github/last-commit/cerberauth/vulnapi)](https://github.com/cerberauth/vulnapi/commits) | [![Contributors](https://img.shields.io/github/contributors/cerberauth/vulnapi)](https://github.com/cerberauth/vulnapi/graphs/contributors) | [![Stars](https://img.shields.io/github/stars/cerberauth/vulnapi)](https://github.com/cerberauth/vulnapi/stargazers) |
 
 
-## Specialised Scanners
+## Scanners Especializados
 
-Tools which focus on specific types of vulnerabilities.
+Ferramentas focadas na detecção e exploração de classes específicas de vulnerabilidades, como SQL Injection, Cross-Site Scripting (XSS), Command Injection, LFI/RFI, etc.
 
-| Main Site | Last Commit | Committers | Stars |
+| Site Principal | Último Commit | Contribuidores | Estrelas |
 | --- | --- | --- | --- |
 | [Sqlmap](https://sqlmap.org/) | [![Last Commit](https://img.shields.io/github/last-commit/sqlmapproject/sqlmap)](https://github.com/sqlmapproject/sqlmap/commits) | [![Contributors](https://img.shields.io/github/contributors/sqlmapproject/sqlmap)](https://github.com/sqlmapproject/sqlmap/graphs/contributors) | [![Stars](https://img.shields.io/github/stars/sqlmapproject/sqlmap)](https://github.com/sqlmapproject/sqlmap/stargazers) |
 | [XSStrike](https://github.com/s0md3v/XSStrike) | [![Last Commit](https://img.shields.io/github/last-commit/s0md3v/XSStrike)](https://github.com/s0md3v/XSStrike/commits) | [![Contributors](https://img.shields.io/github/contributors/s0md3v/XSStrike)](https://github.com/s0md3v/XSStrike/graphs/contributors) | [![Stars](https://img.shields.io/github/stars/s0md3v/XSStrike)](https://github.com/s0md3v/XSStrike/stargazers) |
@@ -115,23 +119,24 @@ Tools which focus on specific types of vulnerabilities.
 | [YA-LFI](https://github.com/0x-Apollyon/YA-LFI) | [![Last Commit](https://img.shields.io/github/last-commit/0x-Apollyon/YA-LFI)](https://github.com/0x-Apollyon/YA-LFI/commits) | [![Contributors](https://img.shields.io/github/contributors/0x-Apollyon/YA-LFI)](https://github.com/0x-Apollyon/YA-LFI/graphs/contributors) | [![Stars](https://img.shields.io/github/stars/0x-Apollyon/YA-LFI)](https://github.com/0x-Apollyon/YA-LFI/stargazers) |
 | [YA-CORS](https://github.com/0x-Apollyon/YA-CORS) | [![Last Commit](https://img.shields.io/github/last-commit/0x-Apollyon/YA-CORS)](https://github.com/0x-Apollyon/YA-CORS/commits) | [![Contributors](https://img.shields.io/github/contributors/0x-Apollyon/YA-CORS)](https://github.com/0x-Apollyon/YA-CORS/graphs/contributors) | [![Stars](https://img.shields.io/github/stars/0x-Apollyon/YA-CORS)](https://github.com/0x-Apollyon/YA-CORS/stargazers) |
 
-## Links
+## Links de Referência
 
-* [Free for Open Source Application Security Tools](https://owasp.org/www-community/Free_for_Open_Source_Application_Security_Tools) - includes commercial tools as well
-* [Vulnerability Scanning Tools](https://owasp.org/www-community/Vulnerability_Scanning_Tools) - covers more tools, includes commercial tools as well
-* [Linux Security Tools](https://linuxsecurity.expert/security-tools/) - covers more tools and evaluates more criteria
-* [Web Hackers Weapons](https://github.com/hahwul/WebHackersWeapons) - covers more tools
-* [Arsenal of cloud native security tools](https://www.marcolancini.it/2018/blog-arsenal-cloud-native-security-tools/)
+* [Free for Open Source Application Security Tools (OWASP)](https://owasp.org/www-community/Free_for_Open_Source_Application_Security_Tools) - Inclui ferramentas comerciais com licenças gratuitas para projetos open source.
+* [Vulnerability Scanning Tools (OWASP)](https://owasp.org/www-community/Vulnerability_Scanning_Tools) - Lista mais abrangente de scanners, incluindo soluções comerciais.
+* [Linux Security Tools](https://linuxsecurity.expert/security-tools/) - Abrange mais ferramentas de segurança (não apenas web) e critérios de avaliação.
+* [Web Hackers Weapons](https://github.com/hahwul/WebHackersWeapons) - Repositório com uma vasta coleção de ferramentas para pentest web.
+* [Arsenal of cloud native security tools](https://www.marcolancini.it/2018/blog-arsenal-cloud-native-security-tools/) - Compilação de ferramentas de segurança voltadas para ambientes de nuvem.
 
-## Contribute
+## Contribua
 
-PR's welcomed.
+Pull Requests (PRs) para adição ou atualização de ferramentas são bem-vindos.
 
-Template line for GitHub projects (replace USER_REPO):
+Modelo de template para projetos GitHub (substitua `USER_REPO`):
 ```
 | []() | [![Last Commit](https://img.shields.io/github/last-commit/USER_REPO)](https://github.com/USER_REPO/commits) | [![Contributors](https://img.shields.io/github/contributors/USER_REPO)](https://github.com/USER_REPO/graphs/contributors) | [![Stars](https://img.shields.io/github/stars/USER_REPO)](https://github.com/USER_REPO/stargazers) |
 ```
-Template line for GitLab projects (replace USER_REPO):
+Modelo de template para projetos GitLab (substitua `USER_REPO`):
 ```
 | []() | [![Last Commit](https://badgen.net/gitlab/last-commit/USER_REPO)](https://gitlab.com/USER_REPO/-/commits/master) | [![Contributors](https://badgen.net/gitlab/contributors/USER_REPO/)](https://gitlab.com/USER_REPO/-/graphs/master) | [![Stars](https://badgen.net/gitlab/stars/USER_REPO/)](https://gitlab.com/USER_REPO/-/starrers) |
 ```
+
